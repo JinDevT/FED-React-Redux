@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { Provider } from 'react-redux';
+import { Provider } from 'react-redux'; //react 프로젝트에서 redux를 적용할 수 있는 함수.
 import { createStore } from 'redux'; //store를 만들어주는 함수.
 import rootReducer from './modules';
 
