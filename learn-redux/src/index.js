@@ -6,8 +6,9 @@ import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux'; //react 프로젝트에서 redux를 적용할 수 있는 함수.
 import { createStore } from 'redux'; //store를 만들어주는 함수.
 import rootReducer from './modules';
+import { composeWithDevTools } from 'redux-devtools-extension';
 
-const store = createStore(rootReducer);
+const store = createStore(rootReducer, composeWithDevTools());
 
 
 
